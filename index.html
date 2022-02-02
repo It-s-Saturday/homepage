@@ -7,49 +7,103 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- This must be first to give css precedence! -->
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+
     <!-- Bootstrap CSS -->
+    <style>
+
+
+        .man-nav {
+            overflow: hidden;
+            background-color: paleturquoise;
+            padding: 14px 16px;
+            color: #000000;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+            height: auto;
+            width: ;
+        }
+
+        #man-outer-carousel {
+            height: 45vh;
+            background-color: rgb(228, 0, 0);
+
+        }
+
+        #man-background {
+            position: relative;
+            /* top: 4vh; */
+            height: 100vh;
+            background-color: rgb(18, 110, 67);
+        }
+
+        #man-carousel-container {
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .man-carousel-item {
+            background-color: rgb(204, 0, 255);
+            /* margin: 0 auto; */
+        }
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
+    <div id="man-background">
+        <nav id="nav-bar" class="nav justify-content-center">
+            <a class="man-nav nav-link" href="#">Home</a>
+            <a class="man-nav nav-link" href="#">About</a>
+            <a class="man-nav nav-link" href="#">Projects</a>
+            <a class="man-nav nav-link" href="#">Contact Us</a>
+        </nav>
 
-    <nav class="nav justify-content-center">
-        <a class="nav-link" href="#">Active link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Disabled link</a>
-    </nav>
+        <div id="man-outer-carousel-container">
+            <div id="carouselId" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
+                <!-- Carousel Images *set style width* -->
+                <div id="man-carousel-container" class="carousel-inner">
+                    <div class="man-carousel-item carousel-item active">
+                        <img src="https://avatars.githubusercontent.com/u/88955607?s=200&v=4" alt="First slide"
+                            style="width:20%;">
+                    </div>
+                    <div class="man-carousel-item carousel-item">
+                        <img src="https://github.com/It-s-Saturday/homepage/blob/main/images/multidest.png?raw=true"
+                            alt="Second slide" style="width:20%;">
+                    </div>
+                    <div class="man-carousel-item carousel-item">
+                        <img src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide"
+                            style="width:100%;">
+                    </div>
+                </div>
 
-    <div id="carouselId" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Carousel Images *set style width* -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://avatars.githubusercontent.com/u/88955607?s=200&v=4" alt="First slide" style="width:20%;">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/multidest.png" alt="Second slide" style="width:20%;">
-            </div>
-            <div class="carousel-item">
-                <img src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide" style="width:100%;">
+                <!-- Sliders arrows for movement  -->
+                <a class="left carousel-control" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="right carousel control" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
-
-        <!-- Sliders arrows for movement  -->
-        <a class="left carousel-control" href="#carouselId" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="right carousel control" href="#carouselId" role="button" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
     </div>
 
+    <footer>
+        <p> It's Saturday<br>
+            <a href="(company email address"></a>
+        </p>
+    </footer>
 
 
 

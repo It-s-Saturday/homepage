@@ -1,0 +1,28 @@
+.man-nav {
+    overflow: hidden;
+    background-color: paleturquoise;
+    padding: 14px 16px;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+#man-carousel-container {
+    height: 45vh;
+    background-color: rgb(153, 153, 153);
+
+}
+
+#man-background {
+    position: relative;
+    top: 4vh;
+    height: 90vh;
+    background-color: grey;
+}
+
+#man-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
